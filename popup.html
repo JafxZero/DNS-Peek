@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DNS Peek</title>
+
+    <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <header>
+        <div class="logo">DNS PEEK</div>
+        <div class="subtitle">DNS / IP intelligence</div>
+    </header>
+
+
+    <section class="target">
+
+        <div class="label">
+            CURRENT TARGET
+        </div>
+
+        <div id="domain" class="domain">
+            loading...
+        </div>
+
+        <div id="status" class="status">
+            Получение DNS...
+        </div>
+
+    </section>
+
+
+    <section class="mainIp">
+
+        <div class="label">
+            PRIMARY IP
+        </div>
+
+        <div id="primaryIp" class="bigIp">
+            —
+        </div>
+
+        <button id="copyBtn">
+            COPY IP
+        </button>
+
+    </section>
+
+
+    <section class="card">
+
+        <div class="cardTitle">
+            NETWORK
+        </div>
+
+        <div class="row">
+            <span>IPv4</span>
+            <span id="ipv4">—</span>
+        </div>
+
+        <div class="row">
+            <span>IPv6</span>
+            <span id="ipv6">—</span>
+        </div>
+
+        <div class="row">
+            <span>ASN / ISP</span>
+            <span id="isp">—</span>
+        </div>
+
+        <div class="row">
+            <span>Location</span>
+            <span id="geo">—</span>
+        </div>
+
+        <div class="row">
+            <span>CDN</span>
+            <span id="cdn">—</span>
+        </div>
+
+    </section>
+
+
+    <section class="card">
+
+        <div class="cardTitle">
+            DNS RECORDS
+        </div>
+
+
+        <div class="dnsBlock">
+
+            <div class="dnsName">
+                CNAME
+            </div>
+
+            <div id="cname" class="dnsValue">
+                —
+            </div>
+
+        </div>
+
+
+        <div class="dnsBlock">
+
+            <div class="dnsName">
+                MX
+            </div>
+
+            <div id="mx" class="dnsValue">
+                —
+            </div>
+
+        </div>
+
+
+        <div class="dnsBlock">
+
+            <div class="dnsName">
+                TXT
+            </div>
+
+            <div id="txt" class="dnsValue">
+                —
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="card">
+
+        <div class="historyHeader">
+
+            <div class="cardTitle">
+                HISTORY
+            </div>
+
+            <button id="clearHistoryBtn" class="smallButton">
+                CLEAR
+            </button>
+
+        </div>
+
+        <div id="history">
+            <div class="empty">
+                История пуста
+            </div>
+        </div>
+
+    </section>
+
+
+    <div class="buttons">
+
+        <button id="refreshBtn">
+            REFRESH
+        </button>
+
+        <button id="jsonBtn">
+            JSON
+        </button>
+
+        <button id="csvBtn">
+            CSV
+        </button>
+
+    </div>
+
+
+    <footer>
+        DNS Peek • Local extension
+    </footer>
+
+</div>
+
+
+<script src="popup.js"></script>
+
+</body>
+</html>

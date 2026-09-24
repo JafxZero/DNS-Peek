@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "DNS Peek",
+  "version": "1.0.0",
+  "description": "DNS, IP, ASN, геолокация и CDN активного сайта.",
+
+  "permissions": [
+    "activeTab",
+    "storage",
+    "clipboardWrite"
+  ],
+
+  "host_permissions": [
+    "https://cloudflare-dns.com/*",
+    "https://ipinfo.io/*"
+  ],
+
+  "action": {
+    "default_title": "DNS Peek",
+    "default_popup": "popup.html"
+  },
+
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "dns-peek@local",
+      "strict_min_version": "109.0"
+    }
+  }
+}

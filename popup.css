@@ -1,0 +1,322 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+
+    width: 390px;
+
+    background: #080a0f;
+    color: #e8eaf0;
+
+    font-family:
+        Inter,
+        system-ui,
+        -apple-system,
+        sans-serif;
+}
+
+
+.app {
+    padding: 18px;
+}
+
+
+header {
+    margin-bottom: 20px;
+}
+
+
+.logo {
+    font-size: 22px;
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+    color: #7aa2ff;
+}
+
+
+.subtitle {
+    margin-top: 3px;
+
+    color: #666d7d;
+
+    font-size: 11px;
+}
+
+
+.target {
+    margin-bottom: 18px;
+}
+
+
+.label {
+    font-size: 9px;
+
+    letter-spacing: 1.5px;
+
+    color: #5d6473;
+}
+
+
+.domain {
+    margin-top: 6px;
+
+    font-size: 20px;
+    font-weight: 650;
+
+    overflow-wrap: anywhere;
+}
+
+
+.status {
+    margin-top: 5px;
+
+    color: #737b8d;
+
+    font-size: 11px;
+}
+
+
+.mainIp {
+    padding: 18px;
+
+    margin-bottom: 12px;
+
+    text-align: center;
+
+    background: #0d1017;
+
+    border: 1px solid #171c27;
+
+    border-radius: 10px;
+}
+
+
+.bigIp {
+    margin-top: 10px;
+    margin-bottom: 14px;
+
+    font-family: monospace;
+
+    font-size: 20px;
+    font-weight: 700;
+
+    color: #8aabff;
+
+    overflow-wrap: anywhere;
+}
+
+
+button {
+    background: #121723;
+
+    border: 1px solid #262d3c;
+
+    color: #cdd4e4;
+
+    border-radius: 6px;
+
+    padding: 8px 13px;
+
+    font-size: 10px;
+    font-weight: 700;
+
+    letter-spacing: 0.5px;
+
+    cursor: pointer;
+}
+
+
+button:hover {
+    background: #192031;
+
+    border-color: #4d659d;
+}
+
+
+button:disabled {
+    opacity: 0.4;
+
+    cursor: default;
+}
+
+
+.card {
+    background: #0d1017;
+
+    border: 1px solid #171c27;
+
+    border-radius: 10px;
+
+    padding: 14px;
+
+    margin-bottom: 12px;
+}
+
+
+.cardTitle {
+    margin-bottom: 12px;
+
+    color: #697287;
+
+    font-size: 9px;
+    font-weight: 700;
+
+    letter-spacing: 1.4px;
+}
+
+
+.row {
+    display: grid;
+
+    grid-template-columns: 85px 1fr;
+
+    gap: 10px;
+
+    padding: 7px 0;
+
+    border-bottom: 1px solid #151923;
+
+    font-size: 11px;
+}
+
+
+.row:last-child {
+    border-bottom: none;
+}
+
+
+.row span:first-child {
+    color: #626a79;
+}
+
+
+.row span:last-child {
+    text-align: right;
+
+    overflow-wrap: anywhere;
+}
+
+
+.dnsBlock {
+    margin-bottom: 13px;
+}
+
+
+.dnsBlock:last-child {
+    margin-bottom: 0;
+}
+
+
+.dnsName {
+    margin-bottom: 5px;
+
+    color: #65708a;
+
+    font-size: 9px;
+}
+
+
+.dnsValue {
+    font-family: monospace;
+
+    color: #c7ccda;
+
+    font-size: 10px;
+
+    line-height: 1.5;
+
+    overflow-wrap: anywhere;
+}
+
+
+.historyHeader {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+
+.historyHeader .cardTitle {
+    margin-bottom: 0;
+}
+
+
+.smallButton {
+    padding: 5px 8px;
+
+    font-size: 8px;
+}
+
+
+.historyItem {
+    padding: 9px 0;
+
+    border-bottom: 1px solid #151923;
+}
+
+
+.historyItem:last-child {
+    border-bottom: none;
+}
+
+
+.historyDomain {
+    font-size: 11px;
+
+    font-weight: 600;
+}
+
+
+.historyIp {
+    margin-top: 3px;
+
+    color: #819ee0;
+
+    font-family: monospace;
+
+    font-size: 10px;
+}
+
+
+.historyDate {
+    margin-top: 3px;
+
+    color: #555d6d;
+
+    font-size: 8px;
+}
+
+
+.empty {
+    color: #515867;
+
+    font-size: 10px;
+}
+
+
+.buttons {
+    display: grid;
+
+    grid-template-columns: 2fr 1fr 1fr;
+
+    gap: 8px;
+
+    margin-top: 5px;
+}
+
+
+footer {
+    margin-top: 18px;
+
+    text-align: center;
+
+    color: #3f4551;
+
+    font-size: 8px;
+}
